@@ -1,16 +1,18 @@
 import { useState } from "react";
-import { createItem } from "./services/Api";
+// import { createItem } from "./services/Api";
+import TaskManager from "./components/TaskManager";
 
 const App = () => {
-  const [title, setTitle] = useState("");
+  // const [title, setTitle] = useState("");
   return (
     <>
-      <input
+      {/* <input
         type="text"
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Title:"
       />
-      <button onClick={() => createItem({ title: title })}>Crear</button>
+      <button onClick={() => createItem({ title: title })}>Crear</button> */}
+      <TaskManager />;
     </>
   );
 };

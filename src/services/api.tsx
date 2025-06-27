@@ -22,7 +22,7 @@ import {
 // }
 
 // Nombre de la colección principal
-const collectionName: string = "items";
+const collectionName = "items";
 
 // Convertir un QuerySnapshot a array de objetos con id
 export const getArrayFromCollection = (querySnapshot) => {
@@ -47,7 +47,7 @@ export const createItem = async (obj) => {
 };
 
 // Actualizar un documento por ID
-export const updateItem = async (id: string, obj) => {
+export const updateItem = async (id, obj) => {
   const docRef = doc(db, collectionName, id);
   await updateDoc(docRef, obj);
 };
