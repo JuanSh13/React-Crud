@@ -1,5 +1,6 @@
-// src/services/taskService.ts
+// Importación de la Conexión a la base de datos
 import { db } from "./firebase";
+// Importación de las funcionalidades de Firebase
 import {
   collection,
   addDoc,
@@ -9,6 +10,7 @@ import {
   getDocs,
   onSnapshot,
 } from "firebase/firestore";
+// Type o Interface para los datos recibidos
 import type { Task } from "../interfaces/Task";
 
 const tasksRef = collection(db, "tasks");

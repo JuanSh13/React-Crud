@@ -1,3 +1,4 @@
+// Conexión a Firebase
 // Importa los módulos de Firebase que necesites
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
